@@ -20,15 +20,12 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
 
-Running from Docker Hub
+Running via Docker
 ---
 Pull and run -- it's this simple.
 
 ```
-# pull from docker hub
-$> docker pull cturra/ntp
-
-# run ntp
+# run ntp via docker
 $> docker run --name=ntp             \
               --restart=always       \
               --detach=true          \
