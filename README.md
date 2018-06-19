@@ -25,7 +25,7 @@ $> docker run --name=ntp             \
               --cap-add=SYS_NICE     \
               --cap-add=SYS_RESOURCE \
               --cap-add=SYS_TIME     \
-              cturra/ntp
+              harbor.cedarhd.com/library/ntp
 ```
 
 
