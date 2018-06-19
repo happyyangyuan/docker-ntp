@@ -99,3 +99,9 @@ docker host:
 $> docker exec ntp ntpctl -s status
 4/4 peers valid, clock synced, stratum 2
 ```
+
+
+## Setup ntp client side
+see  https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-16-04
+
+
