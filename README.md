@@ -10,7 +10,7 @@ This container runs [OpenNTPD](http://www.openntpd.org/index.html) on [Alpine Li
 
 
 
-## Running from Docker Hub
+## Dockerfile
 ```Dockefile
 FROM cturra/ntp
 
