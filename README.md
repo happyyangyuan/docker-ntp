@@ -104,4 +104,14 @@ $> docker exec ntp ntpctl -s status
 ## Setup ntp client side
 see  https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-16-04
 
+### setup ntp-server address
+
+```bash
+vim /etc/ntp.conf
+pool ntp-server0.cedarhd.com
+systemctl restart ntp
+```
+
+
+
 
