@@ -9,6 +9,17 @@ This container runs [OpenNTPD](http://www.openntpd.org/index.html) on [Alpine Li
   http://www.ntp.org
 
 
+
+## Running from Docker Hub
+```Dockefile
+FROM cturra/ntp
+
+RUN apk add -U tzdata
+
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+```
+
+
 Running from Docker Hub
 ---
 Pull and run -- it's this simple.
