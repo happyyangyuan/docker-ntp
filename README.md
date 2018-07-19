@@ -114,10 +114,14 @@ pool ntp-server0.cedarhd.com
 systemctl restart ntp
 ```
 
-#### setup for ubuntu16
+#### setup ntp client for ubuntu16
 ```bash
+## configure ntp server address
+vim /etc/systemd/timesyncd.conf
+systemctl restart systemd-timesyncd
+systemctl enable systemd-timesyncd
+## enable ntp sync
 timedatectl set-ntp yes
-vim 
 ```
 
 
