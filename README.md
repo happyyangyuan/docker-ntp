@@ -17,6 +17,8 @@ FROM cturra/ntp
 RUN apk add -U tzdata
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+COPY ntpd.conf /etc/ntpd.conf
 ```
 
 
