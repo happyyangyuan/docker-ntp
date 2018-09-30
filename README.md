@@ -37,8 +37,8 @@ $> docker run --name=ntp             \
               --cap-add=SYS_TIME     \
               harbor.cedarhd.com/cturra/ntp
 ```
-**需要注意的是：
-1、由于这里给定了--cap-add SYS_TIME，ntp容器具有权限修改宿主机系统时钟和硬件时钟，其内容运行的ntp进程会自动帮我们同步网络时间到容器和宿主机；
+**需要注意的是：<br/>
+1、由于这里给定了--cap-add SYS_TIME，ntp容器具有权限修改宿主机系统时钟和硬件时钟，其内容运行的ntp进程会自动帮我们同步网络时间到容器和宿主机；<br/>
 2、宿主机上不应该再运行任何时间同步进程，比如systemd-timesyncd，ntpd等**
 
 执行如下命令来禁用宿主机的时间同步服务：
